@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 6d0c6424e9bb03a4da94603cb505ad25
+guid: 1fd9e8f8178473c41a5074534940cb98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 397634449453367767
-    second: Fichier 1_0
+      213: 5560412682385594611
+    second: Fichier 2@4x_0
   - first:
-      213: 5629100748764551868
-    second: Fichier 1_1
+      213: -3139867851846622754
+    second: Fichier 2@4x_1
   - first:
-      213: -2666112231781689878
-    second: Fichier 1_2
+      213: 3439252878796966473
+    second: Fichier 2@4x_2
   - first:
-      213: -6703803058285055239
-    second: Fichier 1_3
+      213: -5260541635389485984
+    second: Fichier 2@4x_3
   - first:
-      213: 8735762190638953141
-    second: Fichier 1_4
+      213: 6018131155369383181
+    second: Fichier 2@4x_4
   - first:
-      213: -398158449716188638
-    second: Fichier 1_5
+      213: 2706233858175896371
+    second: Fichier 2@4x_5
+  - first:
+      213: -300248052470427926
+    second: Fichier 2@4x_6
+  - first:
+      213: -1099217418499863781
+    second: Fichier 2@4x_7
+  - first:
+      213: -2465726792559688024
+    second: Fichier 2@4x_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,155 +137,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fichier 1_0
+      name: Fichier 2@4x_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 185
-        width: 164
-        height: 317
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d1402ecc6ea48500800000000000000
-      internalID: 397634449453367767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_1
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 0
-        width: 276
-        height: 686
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cba1ff68e459e1e40800000000000000
-      internalID: 5629100748764551868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_2
-      rect:
-        serializedVersion: 2
-        x: 486
-        y: 252
-        width: 79
-        height: 182
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae514550d01100bd0800000000000000
-      internalID: -2666112231781689878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_3
-      rect:
-        serializedVersion: 2
-        x: 571
-        y: 233
-        width: 71
-        height: 220
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f2fdb203ae47f2a0800000000000000
-      internalID: -6703803058285055239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_4
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 186
-        width: 88
-        height: 314
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b2b257ad69ab3970800000000000000
-      internalID: 8735762190638953141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_5
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 142
-        width: 101
-        height: 403
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22aa850eff4797af0800000000000000
-      internalID: -398158449716188638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fichier 1_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 788
-        height: 686
+        x: 555
+        y: 802
+        width: 27
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd31d60539f2a7c45a1eeba730a8f8f2
-      internalID: -510687130
+      spriteID: 3f89b22dfdd8a2d40800000000000000
+      internalID: 5560412682385594611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1630113d2fc64d0800000000000000
+      internalID: -3139867851846622754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 365
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ace65754eaabf20800000000000000
+      internalID: 3439252878796966473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 378
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c0570114dcef6b0800000000000000
+      internalID: -5260541635389485984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_4
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 380
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05d08f7662b48350800000000000000
+      internalID: 6018131155369383181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_5
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 282
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b85b31b597e8520800000000000000
+      internalID: 2706233858175896371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 231
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee4fffacfd45dbf0800000000000000
+      internalID: -300248052470427926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 39
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bc46fe49bceb0f0800000000000000
+      internalID: -1099217418499863781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fichier 2@4x_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a60150db8af7cdd0800000000000000
+      internalID: -2465726792559688024
       vertices: []
       indices: 
       edges: []
@@ -285,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 545cda44af11a7f4389c6f98c1fe5f25
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -295,13 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fichier 1_0: 397634449453367767
-      Fichier 1_1: 5629100748764551868
-      Fichier 1_2: -2666112231781689878
-      Fichier 1_3: -6703803058285055239
-      Fichier 1_4: 8735762190638953141
-      Fichier 1_5: -398158449716188638
-      Fichier 1_6: -510687130
+      Fichier 2@4x_0: 5560412682385594611
+      Fichier 2@4x_1: -3139867851846622754
+      Fichier 2@4x_2: 3439252878796966473
+      Fichier 2@4x_3: -5260541635389485984
+      Fichier 2@4x_4: 6018131155369383181
+      Fichier 2@4x_5: 2706233858175896371
+      Fichier 2@4x_6: -300248052470427926
+      Fichier 2@4x_7: -1099217418499863781
+      Fichier 2@4x_8: -2465726792559688024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
