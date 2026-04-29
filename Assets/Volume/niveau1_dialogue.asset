@@ -148,8 +148,8 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.22425352
-          value: 0.5031682
+          time: 0.23644121
+          value: 0.50443584
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -238,13 +238,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8807966, z: 0.9367795, w: 0.01684559}
+    m_Value: {x: 1, y: 0.7248346, z: 0.96168435, w: 0.01684559}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 0.9622858, y: 0.99641055, z: 1, w: -0.08422851}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0.3
@@ -315,25 +315,25 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.77
+    m_Value: 1.1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1.6
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.768
   clamp:
     m_OverrideState: 1
-    m_Value: 65472
+    m_Value: 65472.12
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.9811321, g: 0.8933862, b: 0.472054, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   filter:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   downscale:
     m_OverrideState: 1
     m_Value: 0
@@ -381,31 +381,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 4.62
+    m_Value: 10
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 7.37
+    m_Value: 30
   gaussianMaxRadius:
     m_OverrideState: 1
-    m_Value: 1.186
+    m_Value: 1
   highQualitySampling:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 11.93
+    m_Value: 10
   aperture:
     m_OverrideState: 1
     m_Value: 5.6
   focalLength:
     m_OverrideState: 1
-    m_Value: 116
+    m_Value: 50
   bladeCount:
     m_OverrideState: 1
     m_Value: 5
@@ -414,7 +414,7 @@ MonoBehaviour:
     m_Value: 1
   bladeRotation:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 0
 --- !u!114 &-1083910812058648046
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -427,10 +427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
   m_Name: ProbeVolumesOptions
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   normalBias:
     m_OverrideState: 1
-    m_Value: 0.05
+    m_Value: 0.083
   viewBias:
     m_OverrideState: 1
     m_Value: 0.1
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: DefaultVolumeProfile
+  m_Name: niveau1_dialogue
   m_EditorClassIdentifier: 
   components:
   - {fileID: 1247868777620691934}
