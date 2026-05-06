@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ed1d28584ef8134db3260d492f30502
+guid: e898a70e1dbc1194296c5485b73dff94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1401269661199398709
-    second: 8048ae35-acb6-4b12-a548-8690a58b4809_0
+      213: 7888957980519995132
+    second: GIU AMA 204-10_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 8048ae35-acb6-4b12-a548-8690a58b4809_0
+      name: GIU AMA 204-10_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 7973
-        height: 7441
+        x: 292
+        y: 235
+        width: 2014
+        height: 1264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5377256255f427310800000000000000
-      internalID: 1401269661199398709
+      spriteID: cf690ec5c753b7d60800000000000000
+      internalID: 7888957980519995132
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      8048ae35-acb6-4b12-a548-8690a58b4809_0: 1401269661199398709
+      GIU AMA 204-10_0: 7888957980519995132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
