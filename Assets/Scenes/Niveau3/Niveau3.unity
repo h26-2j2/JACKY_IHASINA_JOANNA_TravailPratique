@@ -152,6 +152,7 @@ MonoBehaviour:
   colonne: 4
   blocPrefab: {fileID: 3157030136550420460, guid: 37d57c2c69452ac42b7b5ceef08ae886, type: 3}
   scene: {fileID: 1791886600}
+  duree: 0.2
 --- !u!4 &369983578
 Transform:
   m_ObjectHideFlags: 0
@@ -229,12 +230,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1471217287
+  m_SortingLayer: -2
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3880262944045097749, guid: c53e18193cb937145ab19f5feff70ba7, type: 3}
-  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  m_Color: {r: 0.14465404, g: 0.14465404, b: 0.14465404, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -252,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 484999008}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.2053, z: 0}
+  m_LocalPosition: {x: 2.56, y: 0.2, z: 0}
   m_LocalScale: {x: 0.42723826, y: 0.44556677, z: 0.42723826}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -283,7 +284,7 @@ Transform:
   m_GameObject: {fileID: 1791886599}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25443, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0.25443, y: 1.5, z: 3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -301,6 +302,7 @@ GameObject:
   - component: {fileID: 1859357026}
   - component: {fileID: 1859357025}
   - component: {fileID: 1859357028}
+  - component: {fileID: 1859357029}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -426,11 +428,27 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1859357029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859357024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1859357027}
-  - {fileID: 484999010}
-  - {fileID: 369983578}
   - {fileID: 1791886600}
+  - {fileID: 369983578}
+  - {fileID: 484999010}

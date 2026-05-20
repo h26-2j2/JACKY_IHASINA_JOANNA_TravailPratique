@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class Bloc : MonoBehaviour
@@ -22,15 +22,14 @@ public class Bloc : MonoBehaviour
     {
         spriteRenderer.color = couleur * 0.3f;
     }
-    public void activer()
+    public void Activer()
     {
         spriteRenderer.color = couleur;
     }
 
-   public void OnMouseDown()
+   private void OnMouseDown()
     {
-        //logique
-        //jouer lumiereson
+        logique.JouerLumiereetTon(IDbloc);
     }
 
   

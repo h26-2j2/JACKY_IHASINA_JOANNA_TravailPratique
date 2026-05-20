@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class Logique : MonoBehaviour
 {
     [Header("Setup du Jeu")]
@@ -11,6 +11,11 @@ public class Logique : MonoBehaviour
     [Header("Objets")]
     [SerializeField] private Bloc blocPrefab;
     [SerializeField] private Transform scene;
+
+    [Header("Audio Setup")]
+    [SerializeField] private float duree = 0.2f;
+
+
     void Start()
     {
         numBlocs = rangee * colonne;
@@ -30,5 +35,19 @@ public class Logique : MonoBehaviour
 
             }
         }
+
+        float scale = 6f / rangee;
+        scene.localScale = Vector3.one * scale;
+    }
+
+    private IEnumerator FlashBloc(int index)
+    {
+        bloc[index].Activer();
+        yield return new WaitForSeconds(duree);
+        bloc[index].Desactiver();
+    }
+    public void JouerLumiereetTon(int index)
+    {
+        StartCoroutine(FlashBloc(index));
     }
 }
