@@ -19,4 +19,9 @@ public class Changerscene : MonoBehaviour
       
         SceneManager.LoadScene("Niveau1");
     }
+     public void FinJeu()
+    {
+      
+        SceneManager.LoadScene("Fin");
+    }
 }

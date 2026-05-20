@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Bloc : MonoBehaviour
 {
+    //Tutoriel de Firnox Utilisé et adapté
     private Logique logique;
     private SpriteRenderer spriteRenderer;
     
