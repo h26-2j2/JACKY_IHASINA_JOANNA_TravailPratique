@@ -153,7 +153,7 @@ MonoBehaviour:
   colonne: 4
   blocPrefab: {fileID: 3157030136550420460, guid: 37d57c2c69452ac42b7b5ceef08ae886, type: 3}
   scene: {fileID: 1791886600}
-  boutonJeu: {fileID: 0}
+  boutonJeu: {fileID: 1714333886}
   duree: 0.2
   audioSource: {fileID: 369983579}
 --- !u!4 &369983578
@@ -759,7 +759,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1714333889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 369983577}
+        m_TargetAssemblyTypeName: Logique, Assembly-CSharp
+        m_MethodName: Lejeu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1714333889
 MonoBehaviour:
   m_ObjectHideFlags: 0

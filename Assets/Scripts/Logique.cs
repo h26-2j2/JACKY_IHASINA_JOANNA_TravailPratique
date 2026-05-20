@@ -75,9 +75,40 @@ private int indexPrecis = 0;
     }
     public void JouerLumiereetTon(int index)
     {
-        StartCoroutine(FlashBloc(index));
-        JouerSon(index);
+        if(modeDejeu == ModeDeJeu.Jouer)
+        {
+            StartCoroutine(FlashBloc(index));
+
+            if(index == niveauBloc[indexPrecis])
+            {
+                JouerSon(index);
+                indexPrecis++;
+                if(indexPrecis == niveauBloc.Count)
+                {
+                    niveauBloc.Add(Random.Range(0, numBlocs));
+                    StartCoroutine(JouerSequence());
+                }
+            }
+            else
+            {
+                //arret jeu et message
+                modeDejeu = ModeDeJeu.Menu;
+                boutonJeu.SetActive(true);
+                JouerSonErreur();
+            }
+
+        
+        }
     }
+     private void JouerSonErreur()
+    {
+        audioSource.pitch = 0.5f;
+        double sonJouerMoment = AudioSettings.dspTime;
+           audioSource.PlayScheduled(sonJouerMoment);
+   audioSource.SetScheduledEndTime(sonJouerMoment + 3 * duree);
+
+    }
+
     private void JouerSon(int index)
     {
        if (numBlocs > 1)
@@ -113,6 +144,10 @@ StartCoroutine(JouerSequence());
         foreach( int index in niveauBloc)
         {
             JouerSon(index);
+            yield return FlashBloc(index);
+            yield return new WaitForSeconds(duree);
         }
+        indexPrecis = 0;
+        modeDejeu = ModeDeJeu.Jouer;
     }
 }
