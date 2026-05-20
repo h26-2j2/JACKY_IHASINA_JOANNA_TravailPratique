@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-
-public class DragObject : MonoBehaviour
+public class DragObjet_Autre : MonoBehaviour
 {
-    private Vector3 positionInitiale;
+     private Vector3 positionInitiale;
     Collider2D collider2D;
     public int id = 0; 
     public bool estAuBonEndroit = false; 
@@ -41,7 +40,6 @@ public void AuDebutDeplacer(BaseEventData eventData)
         if (estAuBonEndroit== false)
         {
             collider2D.enabled = true; 
-        transform.position = positionInitiale;
         }else{
             //collider2D.enabled = false;
             //gameObject.SetActive(false);
