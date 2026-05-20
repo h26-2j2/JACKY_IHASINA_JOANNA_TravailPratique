@@ -50,6 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fond`
+    uniqueID: 3047331873
+    locked: 0
   - name: Personnage
     uniqueID: 1471217287
     locked: 0

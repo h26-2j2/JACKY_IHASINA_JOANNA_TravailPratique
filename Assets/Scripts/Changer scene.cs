@@ -6,6 +6,7 @@ public class Changerscene : MonoBehaviour
 {
    public string sceneIntro = "Intro";
    public string Dialogue = "Dialogue";
+    public string Fin = "Fin";
     void Update()
     {
     }
