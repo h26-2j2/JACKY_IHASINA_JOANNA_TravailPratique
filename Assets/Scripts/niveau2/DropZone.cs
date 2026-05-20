@@ -7,14 +7,18 @@ public class DropZone : MonoBehaviour
     public int nombreRequis = 4;
     private int nbrMis = 0;
     public int id = 0;
-        public AudioClip BonEndroit;
+    public AudioClip BonEndroit;
     private AudioSource audioSource;
-     public TMP_Text compteur;
+    public TMP_Text compteur;
+    public GameObject texteVictoire;
+  public GameObject boutonNiveauSuivant;
 
-void Start()
+    void Start()
     {
         audioSource = GetComponent<AudioSource>();
         compteur.text = $"0 / {nombreRequis}";
+        texteVictoire.SetActive(false);
+         boutonNiveauSuivant.SetActive(false);
     }
     public void AuDeposer(BaseEventData eventData)
     {
@@ -39,11 +43,14 @@ void Start()
         }
     }
 
-    void VerifierVictoire()
+     void VerifierVictoire()
     {
         foreach (DropZone zone in FindObjectsOfType<DropZone>())
         {
             if (zone.nbrMis < zone.nombreRequis) return;
         }
+        audioSource.PlayOneShot(BonEndroit);
+        texteVictoire.SetActive(true); 
+        boutonNiveauSuivant.SetActive(true);
     }
 }

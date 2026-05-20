@@ -62,5 +62,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: eryg
+    uniqueID: 1490582985
+    locked: 0
   m_RenderingLayers:
   - Default
