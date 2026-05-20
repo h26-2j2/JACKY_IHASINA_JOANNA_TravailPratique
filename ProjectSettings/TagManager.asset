@@ -6,6 +6,16 @@ TagManager:
   tags:
   - feuille
   - objet
+  - cartes
+  - "th\xE9"
+  - the
+  - patisserie
+  - boites_3
+  - boite1
+  - boite2
+  - boite3
+  - tasses
+  - patisseries
   layers:
   - Default
   - TransparentFX
