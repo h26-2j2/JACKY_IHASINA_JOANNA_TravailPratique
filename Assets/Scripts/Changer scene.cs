@@ -15,6 +15,11 @@ public class Changerscene : MonoBehaviour
     void Update()
     {
     }
+     public void Intro()
+    {
+      
+        SceneManager.LoadScene("Intro");
+    }
     public void DemarrerJeu()
     {
       

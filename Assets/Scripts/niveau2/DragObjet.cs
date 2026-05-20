@@ -10,7 +10,7 @@ public class DragObject : MonoBehaviour
     public bool estAuBonEndroit = false; 
 
     void Start(){
-        positionInitiale = transform.position; // Enregistre la position initiale de l'objet
+        positionInitiale = transform.position; 
         collider2D = GetComponent<Collider2D>();//On doit désactiver le collider de l'objet pendant le glisser-déposer pour que le raycast puisse détecter la zone de dépôt
     }
 

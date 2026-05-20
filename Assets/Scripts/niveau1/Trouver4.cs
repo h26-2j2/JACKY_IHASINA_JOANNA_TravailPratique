@@ -10,11 +10,12 @@ public class Trouver4 : MonoBehaviour
     public string nomScene;
     public GameObject boutonSuivant;
     public GameObject felicitations;
+
     void Start()
     {
-        boutonSuivant.SetActive(false);
-        felicitations.SetActive(false);
-        textePoints.text = "Objets acquis : 0";
+            boutonSuivant.SetActive(false);
+            felicitations.SetActive(false);
+            textePoints.text = "Objets acquis : 0";
     }
 
     public void VerifierObjet(GameObject objetslogique)
@@ -22,14 +23,12 @@ public class Trouver4 : MonoBehaviour
         if (objetslogique.CompareTag("objet"))
         {
             compteur++;
-
-
             textePoints.text = "Objets acquis : " + compteur;
 
             if (compteur >= totalObjectifs)
             {
-                boutonSuivant.SetActive(true);
-                felicitations.SetActive(true);
+                    boutonSuivant.SetActive(true);
+                    felicitations.SetActive(true);
             }
         }
     }
