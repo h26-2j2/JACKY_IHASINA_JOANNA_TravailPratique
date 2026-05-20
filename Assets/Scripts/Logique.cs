@@ -1,7 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
 public class Logique : MonoBehaviour
 {
+    //Utilisé tutoriel de Firnox
     [Header("Setup du Jeu")]
     [SerializeField] private int rangee = 3;
     [SerializeField] private int colonne = 4;
@@ -11,11 +16,23 @@ public class Logique : MonoBehaviour
     [Header("Objets")]
     [SerializeField] private Bloc blocPrefab;
     [SerializeField] private Transform scene;
+    [SerializeField] private GameObject boutonJeu;
 
     [Header("Audio Setup")]
     [SerializeField] private float duree = 0.2f;
+    [SerializeField] private AudioSource audioSource;
 
+enum ModeDeJeu
+    {
+        Rien,
+        Menu,
+        Ecouter,
+        Jouer
+    }
+private ModeDeJeu modeDejeu = ModeDeJeu.Rien;
 
+private List<int> niveauBloc;
+private int indexPrecis = 0;
     void Start()
     {
         numBlocs = rangee * colonne;
@@ -28,7 +45,7 @@ public class Logique : MonoBehaviour
                 int index = (row * colonne) + col;
 
                 bloc[index] = Instantiate(blocPrefab, scene);
-                bloc[index].Init(this, index, Color.HSVToRGB((float)index / numBlocs, 0.8f, 0.9f));
+                bloc[index].Init(this, index, Color.HSVToRGB((float)index / numBlocs, 0.7f, 0.6f));
                 float rangeeDebut = (rangee / 2f) - 0.5f;
                 float ColDebut = (-colonne / 2f) + 0.5f;
                 bloc[index].transform.localPosition = new Vector3(ColDebut + col, rangeeDebut - row, 0f);
@@ -38,8 +55,18 @@ public class Logique : MonoBehaviour
 
         float scale = 6f / rangee;
         scene.localScale = Vector3.one * scale;
+
+        modeDejeu = ModeDeJeu.Menu;
+        StartCoroutine(MenuAnim());
+
     }
 
+    private IEnumerator MenuAnim()
+    {
+        while (modeDejeu == ModeDeJeu.Menu)
+        yield return FlashBloc(Random.Range(0, numBlocs));
+        yield return new WaitForSeconds(duree);
+    }
     private IEnumerator FlashBloc(int index)
     {
         bloc[index].Activer();
@@ -49,5 +76,43 @@ public class Logique : MonoBehaviour
     public void JouerLumiereetTon(int index)
     {
         StartCoroutine(FlashBloc(index));
+        JouerSon(index);
+    }
+    private void JouerSon(int index)
+    {
+       if (numBlocs > 1)
+        {
+            audioSource.pitch = Mathf.Lerp(1.0f, 3.0f, index/ (numBlocs -1f ));
+   
+   double sonJouerMoment = AudioSettings.dspTime;
+   audioSource.PlayScheduled(sonJouerMoment);
+   audioSource.SetScheduledEndTime(sonJouerMoment + duree);
+    }
+
+    }
+    public void Lejeu()
+    {
+        boutonJeu.SetActive(false);
+        StopCoroutine(MenuAnim());
+
+niveauBloc = new()
+{
+    Random.Range(0, numBlocs),
+     Random.Range(0, numBlocs),
+      Random.Range(0, numBlocs)
+};
+
+StartCoroutine(JouerSequence());
+
+    }
+    private IEnumerator JouerSequence()
+    {
+        modeDejeu = ModeDeJeu.Ecouter;
+        yield return new WaitForSeconds(2f);
+
+        foreach( int index in niveauBloc)
+        {
+            JouerSon(index);
+        }
     }
 }
